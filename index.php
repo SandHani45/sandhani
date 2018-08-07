@@ -190,46 +190,7 @@ Analyzing user requirement, designing scalable architecture and selecting suitab
                             </div>
                         </div>
                     </div>
-                    <div class="block-content">
-                        <h3 class="block-title">Services</h3>
-                        <div class="row">
-                            <div class="col-md-4 col-sm-6 service">
-                                <div class="service-icon">
-                                    <i class="ion-laptop"></i>
-                                </div>
-                                <h4>UI Developement</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-                            </div>
-                            <div class="col-md-4 col-sm-6 service">
-                                <div class="service-icon">
-                                    <i class="ion-pie-graph"></i>
-                                </div>
-                                <h4>Backend restful API'S </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-                            </div>
-                            <div class="col-md-4 col-sm-6 service">
-                                <div class="service-icon">
-                                    <i class="ion-paintbucket"></i>
-                                </div>
-                                <h4>Mobile App's Developement</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-                            </div>
-                            <div class="col-md-4 col-sm-6 service">
-                                <div class="service-icon">
-                                    <i class="ion-printer"></i>
-                                </div>
-                                <h4>Wordpress Customization</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-                            </div>
-                            <div class="col-md-4 col-sm-6 service">
-                                <div class="service-icon">
-                                    <i class="ion-social-buffer"></i>
-                                </div>
-                                <h4>Web Dashboard Developement</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-                            </div>
-                        </div>
-                    </div>
+
      
                     <div class="row text-center">
                         <div class="col-md-12 btn-email">
