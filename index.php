@@ -83,7 +83,7 @@
                     <div class="block-content">
                         <h3 class="block-title">Profile</h3>
                         <h3 class="subheading">I'm a <strong>Ful Stack Developer </strong> from India. I aim to make a difference through my creative solution.</h3>
-                        <p>Worked with project teams to create user-friendly and appealing application interfaces and websites for users. Met with project manager, business analyst and architect right from beginning of project, creating rough mock-ups that were refined and extended over many iterations. Adjustments to mock-ups as necessary to address problems encountered.</p>
+                        <p>Worked with various teams to create user-friendly and appealing application interfaces and websites for our company clients. Worked with project managers, business analysts and architects right from beginning of project, creating rough mock-ups that were refined and extended over many iterations.</p>
                         <div class="info-list row">
                             <div class="col-sm-6"><span>Name : </span> Sandhani Shaik</div>
                             <div class="col-sm-6"><span>Date of birth : </span> July 02, 1994 </div>
