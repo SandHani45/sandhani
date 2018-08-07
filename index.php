@@ -50,8 +50,8 @@
                     <a href="/images/Sandhani.pdf" class='btn btn-download' download>
                         <img src="/images/Sandhani.pdf" style="display:none">Download Resume</a>
                     <ul class="social">
-                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/sandhanishaik45"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/sandhani-shaik-8bb76aa4/"><i class="ion-social-linkedin"></i></a></li>
                         <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
                     </ul>
                 </div>
@@ -225,31 +225,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="block-content">
-                        <h3 class="block-title">Testimonials</h3>
-                        <div class="row">
-                            <div id="liontestimonial" class="owl-carousel owl-theme">
-                                <div class="item testimonials">
-                                    <img src="images/testimonials/1.jpg" alt="">
-                                    <blockquote>This template is exactly what we were looking for!
-                                        <p class="quote"><span>Brendon Rodgers</span> - CEO of xyz.com</p>
-                                    </blockquote>
-                                </div>
-                                <div class="item testimonials">
-                                    <img src="images/testimonials/2.jpg" alt="">
-                                    <blockquote>This template is very nice! Great work
-                                        <p class="quote"><span>Becky Allwood</span> - CEO of abc.com</p>
-                                    </blockquote>
-                                </div>
-                                <div class="item testimonials">
-                                    <img src="images/testimonials/3.jpg" alt="">
-                                    <blockquote>My work has been significantly simplified.
-                                        <p class="quote"><span>Elly Page</span> - CEO of nfl.com</p>
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+     
                     <div class="row text-center">
                         <div class="col-md-12 btn-email">
                             <a class="btn lowercase">sandhani.sk45@gmail.com</a>
@@ -267,9 +243,9 @@
                                     <span>Filters :</span>
                                     <ul id="filters">
                                         <li class="active" data-filter="*">All</li>
-                                        <li data-filter=".artwork">Art Work</li>
-                                        <li data-filter=".webdesign">Web Design</li>
-                                        <li data-filter=".design">Design</li>
+                                        <li data-filter=".artwork">Ui Developement</li>
+                                        <li data-filter=".webdesign">Web Dashboard</li>
+                                        <li data-filter=".design">Apps</li>
                                     </ul>
                                 </div>
                                 <div class="portfolio-container row isotope" id="portfolio-container">
