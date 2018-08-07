@@ -24,7 +24,7 @@
         <ul class="inline-menu">
             <li class="about menu-item">Resume</li>
             <li class="portfolio menu-item">Portfolio</li>
-            <li class="blog menu-item">Blog</li>
+            <li class="blog menu-item">Gallery</li>
             <li class="contact menu-item">Contact</li>
             <li id="close" class="menu-item"><i class="ion-ios-close-empty"></i></li>
         </ul>
@@ -69,7 +69,7 @@
                 </div>
                 <div class="blog-block  menu-block">
                     <div class="blog-block-container">
-                        <h2 class="blog menu-item">Blog</h2>
+                        <h2 class="blog menu-item">Gallery</h2>
                     </div>
                 </div>
                 <div class="contact-block  menu-block">
@@ -440,7 +440,7 @@
             <div class="content-blocks blog">
                 <section class="content">
                     <div class="block-content">
-                        <h3 class="block-title">My Blog</h3>
+                        <h3 class="block-title">My Gallery</h3>
                         <div class="row">
                             <div class="col-md-10 mx-auto">
                                 <div class="post">
