@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sandhani Shaik | CV, Resume, Portfolio Template </title>
-    <meta name="description" content="Alpha is a unique portfolio template built with bootstrap. It is perfect for CV/Resume, creative agency, personal portfolio and can easily be converted to suit your needs.">
-    <meta name="author" content="LionCoders" />
+    <meta name="description" content="Html5, Css3, React, Redux, Javascript, Php, Laravel Developer Bangalore">
+    <meta name="author" content="Sandhani Shaik " />
     <link rel="icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
     <link rel="stylesheet" href="css/plugins.min.css" type="text/css" media="screen" />
