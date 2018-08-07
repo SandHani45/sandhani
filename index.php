@@ -46,7 +46,9 @@
                 <div class="name-block-container">
                     <h1><span>Hi, I'm</span>Sandhani Shaik</h1>
                     <h2>Full Stack Developer</h2>
-                    <a class="btn btn-download">Download Resume</a>
+                    <a class="">
+                    <a href="/images/Sandhani.pdf" class='btn btn-download' download>
+                        <img src="/images/Sandhani.pdf" >Download Resume</a>
                     <ul class="social">
                         <li><a href="#"><i class="ion-social-facebook"></i></a></li>
                         <li><a href="#"><i class="ion-social-twitter"></i></a></li>
