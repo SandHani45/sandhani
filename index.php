@@ -16,7 +16,7 @@
 
 <body>
     <div class="preloader">
-        <div class="anim pulse"><img src="images/logo.svg" alt="" style="width: 100px;" ></div>
+        <div class="anim pulse"><img src="images/logo.svg" alt="" style="width: 250px;" ></div>
     </div>
     <div class="preloader-left"></div>
     <div class="inline-menu-container">
