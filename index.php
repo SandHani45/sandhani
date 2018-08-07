@@ -268,7 +268,7 @@
                                     <!-- WORK 1 END -->
                                     <!-- WORK 2 START -->
                                     <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item artwork">
-                                        <a class="open-project" href="project-2.html">
+                                        <a class="open-project" href="project-7.html">
                                             <div class="portfolio-column">
                                                 <div class="portfolio-hover">
                                                     <div class="portfolio-content">
