@@ -139,14 +139,19 @@
                                                 <h4><span>Full Stack Developer</span> @ Applaunch</h4>
                                                 <h5>March 2018 - <span class="current">Present</span></h5>
                                             </div>
-                                            <p> Full stack developer making ui and web appliaction user friendly</p>
+                                            <p> Involved in analyzing client requirement and selecting suitable technology stack.
+Involved in designing scalable architecture based on the requirement.
+Building REST APIs for mobile applications and documenting the work.
+Carry out quality assurance test to discover errors and optimize usability.</p>
                                         </div>
                                         <div class="exp">
                                             <div class="hgroup">
                                                 <h4><span>Web Developer</span> @ Krackerz </h4>
                                                 <h5>August 2016 - Feb 2018</h5>
                                             </div>
-                                            <p>Ut enim ad minim veniam, quis nostrud exerc. Irure dolor in reprehend incididunt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                            <p>Worked extensively with front end and backend technologies.
+Involved in designing scalable architecture based on the requirement.
+Analyzing user requirement, designing scalable architecture and selecting suitable tech stack</p>
                                         </div>
                                     </div>
                                 </div>
@@ -164,21 +169,21 @@
                                                 <h4>Btech - Electronic Communications Engineering |<span>Visvodaya Engineering College ,JNTU Anantapur</span></h4>
                                                 <h5>Mar 2012 - May 2016</h5>
                                             </div>
-                                            <p>Ut enim ad minim veniam, quis nostrud exerc. Irure dolor in reprehend incididunt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                            
                                         </div>
                                         <div class="exp">
                                             <div class="hgroup">
                                                 <h4> 12th |<span>Sri Chaitanya Junior College </span></h4>
                                                 <h5>Mar 2010 - Feb 2012</h5>
                                             </div>
-                                            <p>Ut enim ad minim veniam, quis nostrud exerc. Irure dolor in reprehend incididunt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                            
                                         </div>
                                         <div class="exp">
                                             <div class="hgroup">
                                                 <h4>SSC | <span>Nalanada English Medium Hight School</span></h4>
                                                 <h5>May 2017 - Sept 2017</h5>
                                             </div>
-                                            <p>Ut enim ad minim veniam, quis nostrud exerc. Irure dolor in reprehend incididunt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                           
                                         </div>
                                     </div>
                                 </div>
