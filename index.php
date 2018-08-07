@@ -425,20 +425,7 @@
                                             <img src="images/blog/midium/4.jpg" alt="">
                                         </a>
                                     </div>
-                                    <div class="post-title">
-                                        <a class="open-post" href="post-single.html"><h2>Typography for web</h2></a>
-                                        <p class="post-info">
-                                            <span class="post-author">Posted by John Sparrow</span>
-                                            <span class="slash"></span>
-                                            <span class="post-date">Dec 08, 2017</span>
-                                            <span class="slash"></span>
-                                            <span class="post-catetory">Food</span>
-                                        </p>
-                                    </div>
-                                    <div class="post-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non enim ut enim fringilla adipiscing id in lorem. Quisque aliquet neque vitae lectus tempus consectetur. Aliquam erat volutpat. Nunc eu nibh nulla, id cursus arcu. </p>
-                                        <a class="btn open-post" href="post-single.html">Read More</a>
-                                    </div>
+
                                 </div>
                                 <div class="post">
                                     <div class="post-thumbnail">
@@ -446,20 +433,7 @@
                                             <img src="images/blog/midium/3.jpg" alt="">
                                         </a>
                                     </div>
-                                    <div class="post-title">
-                                        <a class="open-post" href="post-single.html"><h2>Typography for web</h2></a>
-                                        <p class="post-info">
-                                            <span class="post-author">Posted by John Sparrow</span>
-                                            <span class="slash"></span>
-                                            <span class="post-date">Dec 08, 2017</span>
-                                            <span class="slash"></span>
-                                            <span class="post-catetory">Food</span>
-                                        </p>
-                                    </div>
-                                    <div class="post-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non enim ut enim fringilla adipiscing id in lorem. Quisque aliquet neque vitae lectus tempus consectetur. Aliquam erat volutpat. Nunc eu nibh nulla, id cursus arcu. </p>
-                                        <a class="btn open-post" href="post-single.html"">Read More</a>
-                                    </div>
+            
                                 </div>
                                 <div class="post">
                                     <div class="post-thumbnail">
@@ -467,20 +441,8 @@
                                             <img src="images/blog/midium/2.jpg" alt="">
                                         </a>
                                     </div>
-                                    <div class="post-title">
-                                        <a class="open-post" href="post-single.html"><h2>Typography for web</h2></a>
-                                        <p class="post-info">
-                                            <span class="post-author">Posted by John Sparrow</span>
-                                            <span class="slash"></span>
-                                            <span class="post-date">Dec 08, 2017</span>
-                                            <span class="slash"></span>
-                                            <span class="post-catetory">Food</span>
-                                        </p>
-                                    </div>
-                                    <div class="post-body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non enim ut enim fringilla adipiscing id in lorem. Quisque aliquet neque vitae lectus tempus consectetur. Aliquam erat volutpat. Nunc eu nibh nulla, id cursus arcu. </p>
-                                        <a class="btn open-post" href="post-single.html">Read More</a>
-                                    </div>
+                                
+            
                                 </div>
                                 <div class="post">
                                     <div class="post-thumbnail">
@@ -488,7 +450,7 @@
                                             <img src="images/blog/midium/1.jpg" alt="">
                                         </a>
                                     </div>
-                                    <div class="post-title">
+                                    <!-- <div class="post-title">
                                         <a class="open-post" href="post-single.html"><h2>Typography for web</h2></a>
                                         <p class="post-info">
                                             <span class="post-author">Posted by John Sparrow</span>
@@ -497,11 +459,11 @@
                                             <span class="slash"></span>
                                             <span class="post-catetory">Food</span>
                                         </p>
-                                    </div>
-                                    <div class="post-body">
+                                    </div> -->
+                                    <!-- <div class="post-body">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non enim ut enim fringilla adipiscing id in lorem. Quisque aliquet neque vitae lectus tempus consectetur. Aliquam erat volutpat. Nunc eu nibh nulla, id cursus arcu. </p>
                                         <a class="btn open-post" href="post-single.html">Read More</a>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="text-center">
                                     <ul class="pagination">
