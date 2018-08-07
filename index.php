@@ -48,7 +48,7 @@
                     <h2>Full Stack Developer</h2>
                     <a class="">
                     <a href="/images/Sandhani.pdf" class='btn btn-download' download>
-                        <img src="/images/Sandhani.pdf" >Download Resume</a>
+                        <img src="/images/Sandhani.pdf" <style="display:none"></style>>Download Resume</a>
                     <ul class="social">
                         <li><a href="#"><i class="ion-social-facebook"></i></a></li>
                         <li><a href="#"><i class="ion-social-twitter"></i></a></li>
