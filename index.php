@@ -93,7 +93,7 @@
                             <div class="col-sm-6"><span>Skype : </span>sandhani shaik</div>
                             <div class="col-sm-6"><span>Interest : </span> freelance, full-time</div>
                         </div>
-                        <img class="sign" src="images/signature.png" alt="" />
+                       
                     </div>
                     <div class="block-content">
                         <h3 class="block-title">Skills</h3>
