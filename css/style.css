@@ -265,9 +265,9 @@ a:not([href]):not([tabindex]) {
     color: #FFF;
     font-size: 60px;
     position: absolute;
-    top: 49%;
-    left: 39%;
-    transform: translate(-52%, -50%);
+    top: 34%;
+    left: 38%;
+    transform: translate(-50%, -50%);
 }
 
 .preloader-left {
