@@ -1,206 +1,239 @@
-"use strict";
-function GetHeightCss() {
-    var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-    var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    var css = "";
-    var $window = $(window);
-    var windowsize = $window.width();
-    if (windowsize > 767) {
-        var pad = 0;
-    } else {
-        var pad = 0;
-    }
-    var availableheight = h - pad;
-    css = '.height-one{ height: ' + availableheight + 'px;}';
-    var cssEle = document.getElementById('heightStyle');
-    if (cssEle == null) {
-        var head = document.head || document.getElementsByTagName('head')[0],
-            style = document.createElement('style');
-        style.type = 'text/css';
-        style.setAttribute("id", "heightStyle");
-        if (style.styleSheet) {
-            style.styleSheet.cssText = css;
-        } else {
-            style.appendChild(document.createTextNode(css));
-        }
-        head.appendChild(style);
-    } else {
-        cssEle.innerHTML = css;
-    }
-}
-GetHeightCss();
-$(window).on("resize", function() {
-    GetHeightCss();
-	equalheight('.equal-height > div');
-});
-var equalheight = function(container) {
-    var currentTallest = 0,
-        currentRowStart = 0,
-        rowDivs = new Array(),
-        $el,
-        topPosition = 0;
-    $(container).each(function() {
-        $el = $(this);
-        $($el).height('auto')
-        topPosition = $el.position().top;
-        if (currentRowStart != topPosition) {
-            for (var currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) {
-                rowDivs[currentDiv].height(currentTallest);
-            }
-            rowDivs.length = 0; // empty the array
-            currentRowStart = topPosition;
-            currentTallest = $el.height();
-            rowDivs.push($el);
-        } else {
-            rowDivs.push($el);
-            currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
-        }
-        for (var currentDiv = 0; currentDiv < rowDivs.length; currentDiv++) {
-            rowDivs[currentDiv].height(currentTallest);
-        }
-    });
-}
-$(window).on("load", function() {
-    equalheight('.equal-height > div');
-	$('#loading').hide();
-});
-document.addEventListener('DOMContentLoaded', function() {
-    new Typed('.home_title #subtitle', {
-        strings: ['Hi, I am a creative, conceptualized and certified UI/UX expert.', 'I like to do UI Designing, Animation and Prototyping.', 'I deliver beautiful and usable designs for Websites and Apps.'],
-        typeSpeed: 50,
-        backSpeed: 20,
-        smartBackspace: true,
-        loop: true
-    });
-});
-$(function() {
-    var worksgrid = $('#portfolio-grid');
-    $('a', filters).on('click', function() {
-        var selector = $(this).attr('data-filter');
-        $('.current', filters).removeClass('current');
-        $(this).addClass('current');
-        worksgrid.isotope({
-            filter: selector
-        });
-        return false;
-    });
-    $(window).on('resize', function() {
-        var windowWidth = Math.max($(window).width(), window.innerWidth),
-            itemWidht = $('.grid-sizer').width(),
-            itemHeight = Math.floor(itemWidht * 0.95),
-            itemTallHeight = itemHeight * 2;
-        if (windowWidth > 500) {
-            $('.portfolio-item', worksgrid).each(function() {
-                if ($(this).hasClass('tall')) {
-                    $(this).css({
-                        height: itemTallHeight
-                    });
-                } else if ($(this).hasClass('wide')) {
-                    $(this).css({
-                        height: itemHeight
-                    });
-                } else if ($(this).hasClass('wide-tall')) {
-                    $(this).css({
-                        height: itemTallHeight
-                    });
-                } else {
-                    $(this).css({
-                        height: itemHeight
-                    });
-                }
-            });
-        } else {
-            $('.portfolio-item', worksgrid).each(function() {
-                if ($(this).hasClass('tall')) {
-                    $(this).css({
-                        height: itemTallHeight
-                    });
-                } else if ($(this).hasClass('wide')) {
-                    $(this).css({
-                        height: itemHeight / 2
-                    });
-                } else if ($(this).hasClass('wide-tall')) {
-                    $(this).css({
-                        height: itemHeight
-                    });
-                } else {
-                    $(this).css({
-                        height: itemHeight
-                    });
-                }
-            });
-        }
-        worksgrid.isotope();
-    }).resize();
-    $('.popup-link').magnificPopup({
-        type: 'image',
-        gallery: {
-            enabled: true
-        },
-        image: {
-            titleSrc: function(item) {
-                return item.el.attr('title') + '<small>by Alex Smith</small>';
-            }
-        }
-    });	
-    $('.popup-youtube, .popup-vimeo').magnificPopup({
-        disableOn: 700,
-        type: 'iframe',
-        mainClass: 'mfp-fade',
-        removalDelay: 160,
-        preloader: false,
-        fixedContentPos: false
-    });	
-	$('.popup-text').magnificPopup({
-        type: 'inline',
-        preloader: false,
-		midClick: true,        
-		closeBtnInside:true
-    });    
-	$("#cf-form").submit(function (e) {
-		e.preventDefault();
-		var isValid = true;
-		var email = $("#email").val();
-		$("#name").css("border-color", "#e8eaf6");
-		$("#email").css("border-color", "#e8eaf6");
-		
-		if($("#name").val() == ""){
-			$("#name").css("border-color", "red");
-			$("#name").focus();
-			isValid = false;
-		}
-		if($("#email").val() == ""){
-			$("#email").css("border-color", "red");
-			$("#email").focus();
-			isValid = false;
-		}
-		if(!validateEmail(email)){
-			$("#email").css("border-color", "red");
-			$("#email").focus();
-			isValid = false;
-		}
-		
-		if(isValid){
-			var form_data = $("#cf-form").serialize();
-			$.ajax({
-				type: "POST", 
-				url: "send-mail.php",
-				dataType: "json",
-				data: form_data
-			}).done(function (data) {
-				if(data["status"] == "success"){
-					$(".contact-message").html("<span class='sucess'>Thank you! Your message has been successfully sent. We will contact you very soon!</span>");
-				}
-				if(data["status"] == "error"){
-					$(".contact-message").html("<span class='error'>There was an error trying to send your message. Please try again later.</span>");
-				}
-			}).fail(function (data) {
-				console.log(data);
-			});
-		}
+(function($) {
+	"use strict";
+
+	$(window).on('load', function() {
+	    $(".preloader").fadeOut("slow", function() {
+	        $(".preloader-left").addClass("slide-left");
+	    });
+
+	    $('#lionhero').owlCarousel({
+	        animateOut: 'fadeOut',
+	        nav: true,
+	        navText: [
+	            '<i class="ion-ios-arrow-thin-left"></i>',
+	            '<i class="ion-ios-arrow-thin-right"></i>'
+	        ],
+	        items: 1,
+	        navSpeed: 400,
+	        loop: true,
+	        autoplay: true,
+	        autoplayTimeout: 4000,
+	        autoplayHoverPause: true,
+	    });
+
+	    $('#liontextslider').owlCarousel({
+	        nav: false,
+	        items: 1,
+	        navSpeed: 400,
+	        loop: true,
+	        autoplay: true,
+	        autoplayTimeout: 4000,
+	        autoplayHoverPause: true,
+	    });
+
+	    $('#liontestimonial').owlCarousel({
+	        nav: true,
+	        navText: [
+	            '<i class="ion-ios-arrow-thin-left"></i>',
+	            '<i class="ion-ios-arrow-thin-right"></i>'
+	        ],
+	        items: 1,
+	        navSpeed: 400,
+	        loop: true,
+	        autoplay: true,
+	        autoplayTimeout: 4000,
+	        autoplayHoverPause: true,
+	    });
 	});
-});
-function validateEmail(email) {
-	var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-	return re.test(String(email).toLowerCase());
-}
+
+	$('.portfolio-block, .menu-item').on('click', function() {
+
+	    //Portfolio masonry
+	    var $container = $('#portfolio-container');
+	    $container.isotope({
+	        masonry: {
+	            columnWidth: '.portfolio-item'
+	        },
+	        itemSelector: '.portfolio-item'
+	    });
+	    $('#filters').on('click', 'li', function() {
+	        $('#filters li').removeClass('active');
+	        $(this).addClass('active');
+	        var filterValue = $(this).attr('data-filter');
+	        $container.isotope({ filter: filterValue });
+	    });
+
+	});
+
+	// Typing Animation (Typed.js)
+	$('#element').typed({
+	    strings: ["UX, UI Designer", "Web App Developer", "Social Animal!"],
+	    typeSpeed: 0,
+	    loop: true,
+	    startDelay: 500,
+	    backDelay: 3000,
+	    contentType: 'html',
+	});
+
+	//Video background
+	$(".player").mb_YTPlayer({
+	    containment: '#video-wrapper',
+	    mute: true,
+	    showControls: false,
+	    quality: 'default',
+	    startAt: 5
+	});
+
+	//Portfolio Modal
+	$('.open-project').on('click', function() {
+	    var projectUrl = $(this).attr("href");
+	    $('.inline-menu-container').removeClass('showx');
+	    $('.sidebar-menu').addClass('hidex');
+	    $('.content-blocks.pop').addClass('showx');
+	    $('.content-blocks.pop section').load(projectUrl)
+	    return false;
+	});
+
+	//Blog post Modal
+	$('.open-post').on('click', function() {
+	    var postUrl = $(this).attr("href");
+	    $('.inline-menu-container').removeClass('showx');
+	    $('.sidebar-menu').addClass('hidex');
+	    $('.content-blocks.pop').addClass('showx');
+	    $('.content-blocks.pop section').load(postUrl);
+	    return false;
+	});
+
+	//On Click Open Menu Items
+	$('.menu-block, .menu-item').on('click', function() {
+	    $('.name-block').addClass('reverse');
+	    $('.name-block-container').addClass('reverse');
+	    $('.menu-blocks').addClass('hidex');
+	    $('.inline-menu-container').addClass('showx');
+	    $('.inline-menu-container.style2').addClass('dark');
+	});
+	//On Click Open About/Resume Block
+	$('.about-block, .menu-item.about').on('click', function() {
+	    $('.content-blocks').removeClass('showx');
+	    $('.content-blocks.about').addClass('showx');
+	    $('.menu-item').removeClass('active');
+	    $('.menu-item.about').addClass('active');
+	});
+	//On Click Open Portfolio Block
+	$('.portfolio-block, .menu-item.portfolio').on('click', function() {
+	    $('.content-blocks').removeClass('showx');
+	    $('.content-blocks.portfolio').addClass('showx');
+	    $('.menu-item').removeClass('active');
+	    $('.menu-item.portfolio').addClass('active');
+	});
+	//On Click Open Blog Block
+	$('.blog-block, .menu-item.blog').on('click', function() {
+	    $('.content-blocks').removeClass('showx');
+	    $('.content-blocks.blog').addClass('showx');
+	    $('.menu-item').removeClass('active');
+	    $('.menu-item.blog').addClass('active');
+	});
+	//On Click Open Contact Block
+	$('.contact-block, .menu-item.contact').on('click', function() {
+	    $('.content-blocks').removeClass('showx');
+	    $('.content-blocks.contact').addClass('showx');
+	    $('.menu-item').removeClass('active');
+	    $('.menu-item.contact').addClass('active');
+	});
+
+	//On Click Close Blocks
+	$('#close').on('click', function() {
+	    $('.name-block').removeClass('reverse');
+	    $('.name-block-container').removeClass('reverse');
+	    $('.content-blocks').removeClass('showx');
+	    $('.menu-blocks').removeClass('hidex');
+	    $('.inline-menu-container').removeClass('showx');
+	    $('.menu-item').removeClass('active');
+	});
+	//On Click Close Blog Post And Project Details
+	$('#close-pop').on('click', function() {
+	    $('.content-blocks.pop').removeClass('showx');
+	    $('.sidebar-menu').removeClass('hidex');
+	    $('.inline-menu-container').addClass('showx');
+	    $('.content-blocks.pop section').empty();
+	});
+
+	$('.menu-block, .menu-item, #close').on('click', function() {
+	    $('.content-blocks').animate({ scrollTop: 0 }, 800);
+	});	
+
+	//Function for 'Index-Menu2.html'
+	$('#home').on('click', function() {
+	    $('.content-blocks').removeClass('showx');
+	    $('.menu-item').removeClass('active');
+	    $(this).addClass('active');
+	    $('.inline-menu-container.style2').removeClass('dark');
+	});
+
+	// Intialize Map
+	google.maps.event.addDomListener(window, 'load', init);
+
+	function init() {
+	    // Basic options for a simple Google Map
+	    // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+	    var mapOptions = {
+	        // How zoomed in you want the map to start at (always required)
+	        zoom: 11,
+
+	        // The latitude and longitude to center the map (always required)
+	        center: new google.maps.LatLng(40.6700, -73.9400), 
+
+	        scrollwheel: false,
+
+
+	        // How you would like to style the map.
+	        // This is where you would paste any style found on Snazzy Maps.
+	        styles: [{
+	            featureType: 'all',
+	            stylers: [{
+	                saturation: -65
+	            }]
+	        }, {
+	            featureType: 'road.arterial',
+	            elementType: 'geometry',
+	            stylers: [{
+	                hue: '#00ffee'
+	            }, {
+	                saturation: 80
+	            }]
+	        }, {
+	            featureType: 'poi.business',
+	            elementType: 'labels',
+	            stylers: [{
+	                visibility: 'off'
+	            }]
+	        }]
+	    };
+
+	    // Get the HTML DOM element that will contain your map
+	    // We are using a div with id="map" seen below in the <body>
+	    var mapElement = document.getElementById('map');
+
+	    // Create the Google Map using our element and options defined above
+	    var map = new google.maps.Map(mapElement, mapOptions);
+
+	    var image = 'images/map-marker.png';
+	    // Let's also add a marker while we're at it
+	    var marker = new google.maps.Marker({
+	        position: new google.maps.LatLng(40.6700, -73.9400),
+	        map: map,
+	        icon: image,
+	        draggable: true,
+	        animation: google.maps.Animation.DROP
+	    });
+	    marker.addListener('click', toggleBounce);
+
+	    function toggleBounce() {
+	        if (marker.getAnimation() !== null) {
+	            marker.setAnimation(null);
+	        } else {
+	            marker.setAnimation(google.maps.Animation.BOUNCE);
+	        }
+	    }
+	}
+})(jQuery);
