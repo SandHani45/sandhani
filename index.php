@@ -432,7 +432,7 @@
                     </div>
                     <div class="row text-center">
                         <div class="col-md-12 btn-email">
-                            <a class="btn lowercase">shout@james.com</a>
+                            <a class="btn lowercase">sandhani.sk@gmail.com</a>
                         </div>
                     </div>
                 </section>
@@ -581,7 +581,7 @@
                                     </div>
                                     <div class="contact-details">
                                         <h5>Address</h5>
-                                        <p>Btm 2nd Stage, 35th Main ,5th Cross ,Bangolure ,560076</p>
+                                        <p>Btm 2nd Stage, 35th Main ,5th Cross ,Bangalore ,560076</p>
                                     </div>
                                 </div>
                                 <div class="contact-content">
@@ -614,8 +614,39 @@
             </div>
         </div>
     </section>
+    <!-- Start of Async Drift Code -->
+<script>
+"use strict";
+
+!function() {
+  var t = window.driftt = window.drift = window.driftt || [];
+  if (!t.init) {
+    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+    t.factory = function(e) {
+      return function() {
+        var n = Array.prototype.slice.call(arguments);
+        return n.unshift(e), t.push(n), t;
+      };
+    }, t.methods.forEach(function(e) {
+      t[e] = t.factory(e);
+    }), t.load = function(t) {
+      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+      var i = document.getElementsByTagName("script")[0];
+      i.parentNode.insertBefore(o, i);
+    };
+  }
+}();
+drift.SNIPPET_VERSION = '0.3.1';
+drift.load('rbfmxnvybyab');
+</script>
+<!-- End of Async Drift Code -->
     <script src="js/plugins.min.js"></script>
     
     <script src="js/main.js"></script>
+
+    <!-- Chat Setup -->
+    
 </body>
 </html>
