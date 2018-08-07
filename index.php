@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sandhani Shaik | CV, Resume, Portfolio Template </title>
-    <meta name="description" content="Html5, Css3, React, Redux, Javascript, Php, Laravel Developer Bangalore">
+    <meta name="description" content="Html5, Css3, React, Redux, Javascript, Php, Laravel Developer Bangalore, Best Freelancing Web And Ui Developer in India">
     <meta name="author" content="Sandhani Shaik " />
     <link rel="icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
@@ -16,7 +16,7 @@
 
 <body>
     <div class="preloader">
-        <div class="anim pulse"><img src="images/logo.svg" alt="" style="width: 250px;" ></div>
+        <div class="anim pulse"><img src="images/logo.svg" alt="Logo" style="width: 250px;" ></div>
     </div>
     <div class="preloader-left"></div>
     <div class="inline-menu-container">
