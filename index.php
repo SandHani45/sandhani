@@ -387,7 +387,7 @@ Analyzing user requirement, designing scalable architecture and selecting suitab
                             <div class="col-md-10 mx-auto">
                                 <div class="post">
                                     <div class="post-thumbnail">
-                                        <a class="open-post" href="post-single.html">
+                                        <a class="open-post" >
                                             <img src="images/blog/midium/4.jpg" alt="">
                                         </a>
                                     </div>
@@ -395,7 +395,7 @@ Analyzing user requirement, designing scalable architecture and selecting suitab
                                 </div>
                                 <div class="post">
                                     <div class="post-thumbnail">
-                                        <a class="open-post" href="post-single.html">
+                                        <a class="open-post">
                                             <img src="images/blog/midium/3.jpg" alt="">
                                         </a>
                                     </div>
@@ -403,7 +403,7 @@ Analyzing user requirement, designing scalable architecture and selecting suitab
                                 </div>
                                 <div class="post">
                                     <div class="post-thumbnail">
-                                        <a class="open-post" href="post-single.html">
+                                        <a class="open-post" >
                                             <img src="images/blog/midium/2.jpg" alt="">
                                         </a>
                                     </div>
@@ -412,7 +412,7 @@ Analyzing user requirement, designing scalable architecture and selecting suitab
                                 </div>
                                 <div class="post">
                                     <div class="post-thumbnail">
-                                        <a class="open-post" href="post-single.html">
+                                        <a class="open-post">
                                             <img src="images/blog/midium/1.jpg" alt="">
                                         </a>
                                     </div>
